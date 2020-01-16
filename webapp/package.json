@@ -3,7 +3,9 @@
   "description": "Example Website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodeos": "nodeos --config-dir ~/eosio/chain/config --data-dir ~/eosio/chain/data -e -p eosio --plugin eosio::chain_api_plugin --contracts-console",
+    "preview": "gp preview $(gp url 8000)"
   },
   "author": "",
   "license": "ISC",

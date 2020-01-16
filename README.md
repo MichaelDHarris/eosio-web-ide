@@ -64,7 +64,7 @@ cleos push action talk post '[1001, 2000, bob, "Replying to your post"]' -p bob
 
 Run this in a terminal:
 ```
-cleos get table talk '' message
+cleos get table talk talk message
 
 ```
 

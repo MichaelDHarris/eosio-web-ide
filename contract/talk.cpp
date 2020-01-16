@@ -22,7 +22,7 @@ class talk : eosio::contract {
 
     // Post a message
     [[eosio::action]] void post(uint64_t id, uint64_t reply_to, eosio::name user, const std::string& content) {
-        message_table table{get_self(), 0};
+        message_table table{get_self(), get_self()};
 
         // Check user
         require_auth(user);
