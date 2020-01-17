@@ -18,3 +18,4 @@ tasks:
   command: nginx -c $PWD/nginx.conf; npx webpack-dev-server
 - before: cleos wallet unlock --password </password
   command: cleos wallet list
+- before: cd webapp
